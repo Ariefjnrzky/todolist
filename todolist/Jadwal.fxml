@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="405.0" style="-fx-background-image: url('image/Background.png');" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todolist.JadwalController">
+   <children>
+      <ScrollPane prefHeight="720.0" prefWidth="405.0" styleClass="mainFxmlClass" stylesheets="@jadwal.css">
+        <content>
+            <VBox minHeight="720.0" minWidth="250.0" style="-fx-background-color: #69E2B9; -fx-spacing: 12;">
+               <children>
+                <AnchorPane minHeight="265.0" minWidth="390.0" prefHeight="265.0" prefWidth="390.0">
+                     <children>
+                        <ImageView fx:id="buttonAdd" fitHeight="42.0" fitWidth="42.0" layoutX="334.0" layoutY="14.0" onMouseClicked="#openAdd">
+                           <image>
+                              <Image url="@image/AddIcon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="buttonBack" fitHeight="42.0" fitWidth="42.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#openHomeUser">
+                           <image>
+                              <Image url="@image/BackIcon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="200.0" fitWidth="165.0" layoutX="113.0" layoutY="56.0">
+                           <image>
+                              <Image url="@image/JadwalIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <VBox style="-fx-background-color: #C6F0E2; -fx-background-radius: 4; -fx-spacing: 12;">
+                     <children>
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Senin">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="layoutTaskSenin" style="-fx-spacing: 8;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                  </VBox>
+                  <VBox style="-fx-background-color: #C6F0E2; -fx-background-radius: 4; -fx-spacing: 12;">
+                     <children>
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Selasa">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="layoutTaskSelasa" style="-fx-spacing: 8;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                  </VBox>
+                  <VBox style="-fx-background-color: #C6F0E2; -fx-background-radius: 4; -fx-spacing: 12;">
+                     <children>
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Rabu">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="layoutTaskRabu" style="-fx-spacing: 8;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                  </VBox>
+                  <VBox style="-fx-background-color: #C6F0E2; -fx-background-radius: 4; -fx-spacing: 12;">
+                     <children>
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Kamis">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="layoutTaskKamis" style="-fx-spacing: 8;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                  </VBox>
+                  <VBox style="-fx-background-color: #C6F0E2; -fx-background-radius: 4; -fx-spacing: 12;">
+                     <children>
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Jumat">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="layoutTaskJumat" style="-fx-spacing: 8;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                  </VBox>
+                  <VBox style="-fx-background-color: #C6F0E2; -fx-background-radius: 4; -fx-spacing: 12;">
+                     <children>
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Sabtu">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="layoutTaskSabtu" style="-fx-spacing: 8;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                  </VBox>
+                  <VBox style="-fx-background-color: #C6F0E2; -fx-background-radius: 4; -fx-spacing: 12;">
+                     <children>
+                        <Text nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="Minggu">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Text>
+                        <VBox fx:id="layoutTaskMinggu" style="-fx-spacing: 8;" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="12.0" right="12.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                     </padding>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="24.0" />
+               </padding>
+            </VBox>
+        </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

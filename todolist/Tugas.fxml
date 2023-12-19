@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="405.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="todolist.TugasController">
+   <children>
+      <ScrollPane prefHeight="720.0" prefWidth="405.0" styleClass="mainFxmlClass" stylesheets="@jadwal.css">
+         <content>
+            <VBox fx:id="layoutCard" minHeight="720.0" minWidth="250.0" style="-fx-background-color: #69E2B9; -fx-spacing: 12;">
+               <children>
+                  <AnchorPane minHeight="265.0" minWidth="390.0" prefHeight="265.0" prefWidth="390.0">
+                     <children>
+                        <ImageView fx:id="buttonAdd" fitHeight="42.0" fitWidth="42.0" layoutX="334.0" layoutY="14.0" onMouseClicked="#openAdd">
+                           <image>
+                              <Image url="@image/AddIcon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="buttonBack" fitHeight="42.0" fitWidth="42.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#openHomeUser">
+                           <image>
+                              <Image url="@image/BackIcon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="200.0" fitWidth="163.0" layoutX="114.0" layoutY="56.0">
+                           <image>
+                              <Image url="@image/TugasIcon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+               <padding>
+                  <Insets bottom="24.0" />
+               </padding>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="405.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="todolist.HomeController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="412.0" layoutX="-1.0">
+         <image>
+            <Image url="@image/Background.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="199.0" fitWidth="200.0" layoutX="105.0" layoutY="14.0">
+         <image>
+            <Image url="@image/Logo.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="menuAboutme" fitHeight="152.0" fitWidth="125.0" layoutX="234.0" layoutY="483.0" onMouseClicked="#openAboutMe">
+         <image>
+            <Image url="@image/AboutMeIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="menuInformasi" fitHeight="152.0" fitWidth="125.0" layoutX="52.0" layoutY="483.0" onMouseClicked="#openInformasi">
+         <image>
+            <Image url="@image/InformasiIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="menuJadwal" fitHeight="152.0" fitWidth="125.0" layoutX="52.0" layoutY="298.0" onMouseClicked="#openJadwal">
+         <image>
+            <Image url="@image/JadwalIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="menuTugas" fitHeight="152.0" fitWidth="125.0" layoutX="234.0" layoutY="298.0" onMouseClicked="#openTugas">
+         <image>
+            <Image url="@image/TugasIcon.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="buttonLogout" fitHeight="42.0" fitWidth="42.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#logout">
+         <image>
+            <Image url="@image/LogoutIcon.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
